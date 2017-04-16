@@ -20,6 +20,8 @@ body {
 
 .contenedor {
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     border: 20px solid white;
 }
 
@@ -34,24 +36,4 @@ div[class*="item-"] {
 div[class*="item-"]:nth-child(odd) {
     background-color: black;
     color: white;
-}
-
-.contenido {
-    flex-grow: 1;
-    background-color: white;
-    width: 70%;
-    min-height: 500px;
-    border: 1px solid gray;
-}
-
-h1 {
-    flex-basis: 100%;
-}
-
-.lateral {
-    flex-grow: 0.5;
-    margin-left: 20px;
-    background-color: darkgray;
-    width: 25%;
-    min-height: 500px;
 }
