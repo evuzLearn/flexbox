@@ -20,14 +20,16 @@ body {
 
 .contenedor {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 100vh;
     border: 20px solid white;
 }
 
 div[class*="item-"] {
     background: orange;
-    flex: 1;
+    flex-grow: 1;
+    width: 300px;
     padding: 10px;
     text-align: center;
     border: 2px solid gray;
