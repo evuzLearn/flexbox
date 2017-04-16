@@ -2,30 +2,38 @@
     box-sizing: inherit;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 html, body {
     width: 100%;
     height: 100%;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: lightgray;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .contenedor {
     display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    min-height: 100px;
-    background-color: lightgray;
-    padding: 20px;
-    font-family: sans-serif;
+    border: 20px solid white;
+}
+
+div[class*="item-"] {
+    background: orange;
+    flex: 1;
+    padding: 10px;
     text-align: center;
+    border: 2px solid gray;
+}
+
+div[class*="item-"]:nth-child(odd) {
+    background-color: black;
+    color: white;
 }
 
 .contenido {
