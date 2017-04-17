@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     font-size: 20px;
     height: 100vh;
     border: 20px solid white;
