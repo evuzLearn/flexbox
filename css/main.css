@@ -1,6 +1,4 @@
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -8,8 +6,7 @@ html {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
 }
@@ -35,7 +32,6 @@ div[class*="item-"] {
     padding: 10px;
     text-align: center;
     border: 2px solid gray;
-    flex: 1;
 }
 
 div[class*="item-"]:nth-child(odd) {
@@ -43,7 +39,26 @@ div[class*="item-"]:nth-child(odd) {
     color: white;
 }
 
-div[class*="item-"]:nth-child(6) {
-    background-color: aqua;
-    flex: 3;
+div[class*="item-"]:nth-child(1) {
+    flex: 1 1 200px;
+
+    /*flex-grow: 1;
+    flex-shrink: 10;
+    flex-basis: 200px;*/
+}
+
+div[class*="item-"]:nth-child(2) {
+    flex: 10 10 200px;
+
+    /*flex-grow: 1;
+    flex-shrink: 10;
+    flex-basis: 200px;*/
+}
+
+div[class*="item-"]:nth-child(3) {
+    flex: 1 1 200px;
+
+    /*flex-grow: 1;
+    flex-shrink: 10;
+    flex-basis: 200px;*/
 }
