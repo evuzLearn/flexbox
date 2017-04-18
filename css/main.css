@@ -33,6 +33,7 @@ body {
 
 div[class*="item-"] {
     background: orange;
+    flex-grow: 1;
     padding: 10px;
     text-align: center;
     border: 2px solid gray;
@@ -41,4 +42,9 @@ div[class*="item-"] {
 div[class*="item-"]:nth-child(odd) {
     background-color: black;
     color: white;
+}
+
+div[class*="item-"]:nth-child(6) {
+    background-color: aqua;
+    align-self: stretch;
 }
